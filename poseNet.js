@@ -30,7 +30,11 @@ function draw(){
   //check if there is a valid pose, then draw circle on nose
   if(pose){
     fill(255, 0, 0);
-    ellipse(pose.nose.x, pose.nose.y, 30);
+    ellipse(pose.nose.x, pose.nose.y, 50);
+    fill(0, 255, 0);
+    ellipse(pose.rightWrist.x, pose.rightWrist.y, 30);
+    ellipse(pose.leftWrist.x, pose.leftWrist.y, 30);
+
   }
     
 }
